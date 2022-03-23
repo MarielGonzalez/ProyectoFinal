@@ -10,46 +10,64 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/357aebe863.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <div class="alert alert-dismissible alert-success">
+    <div class="alert alert-dismissible alert-success" style="display: flexbox; margin-bottom: 0%; text-align: center;">
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+        <strong>Aprovecha 25% de descuento</strong> en tus viajes a Samana por motivos de Semana Santa <a href="#" class="alert-link">mas informacion Aqui</a>.
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: violet;">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"><img src="Logotipo_de_Renfe_Operadora.svg.png" alt="logo" style="width: 80px; height: 60px; margin-left: 15px;"></a>
         <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div id="login" style=" position: relative; left: 80%; border-color: none;"><button class="badge btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" style="border-style:none; background-color:rgb(163, 67, 147); font-size: medium; "><span class="badge">Iniciar Sesion</span></span><i class="fa-solid fa-user"></i></button>
+        <div id="login"><button class="badge btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" style="border-style:none; background-color:rgb(163, 67, 147); font-size: medium; "><span class="badge">Iniciar Sesion</span></span><i class="fa-solid fa-user"></i></button>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">¡Ingresa y disfruta de todas las ventajas!</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                     </div>
                     <div class="modal-body">
                         <form>
+
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form-control" id="recipient-name">
+                                <label for="Nombre" class="col-form-label">Nombre</label>
+                                <input type="text" class="form-control" id="Nombre">
                             </div>
                             <div class="form-group">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                                <label for="Apellido" class="col-form-label">Apellido</label>
+                                <input type="text" class="form-control" id="Apellido">
+                            </div>
+                            <div class="form-group">
+                                <label for="Edad" class="col-form-label">Edad</label>
+                                <input type="number" class="form-control" id="Edad">
+                            </div>
+                            <div class="form-group">
+                                <label for="Nombre" class="col-form-label">Nombre</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pass" class="col-form-label">Password:</label>
+                                <input type="password" class="form-control" id="pass">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
                     </div>
                 </div>
             </div>
@@ -80,31 +98,58 @@
         </div>
     </nav>
 
-    <img src="tren.jpg" class="img-fluid" alt="Responsive image" style="width: 100%;">
-    <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <!--Background-->
+    <img src="tren.jpg" class="img-fluid" alt="Responsive image" style="width: 100%; height: 500px;">
+    <!--Background-->
 
-    <div class="card border-dark mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-            <h4 class="card-title">Dark card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+    <!--Background-->
+    <div class="jumbotron" style="background-color: #ebe9e0;">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+
     </div>
 
-    <br>
+    <!--Cuadro de reservas de viajes-->
+    <div id="ruta" class="Container-ruta">
+        <!--div 1-->
+        <div class="card border-dark mb-3 div-ruta">
+            <div class="card-header">Desde</div>
+            <div class="card-body div-ruta">
+                <select name="Ciudad" id="Ciudad" class="">
+                    <option value="Santo Domingo - Zona Orienta">Santo Domingo - Zona Oriental</option>
+                    <option value="Santiago">Santiago</option>
+                    <option value="Higüey">Higüey</option>
+                    <option value="Samaná">Samaná</option>
+                    </select>
+            </div>
+        </div>
 
-    <div class="card border-dark mb-3" style="max-width: 20rem;">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-            <h4 class="card-title">Dark card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <br>
+        <!--div 2-->
+        <div class="card border-dark mb-3 div-ruta">
+            <div class="card-header">Hasta</div>
+            <div class="card-body div-ruta">
+                <select name="Ciudad" id="Ciudad" class="">
+                    <option value="Santo Domingo - Zona Orienta">Santo Domingo - Zona Oriental</option>
+                    <option value="Santiago">Santiago</option>
+                    <option value="Higüey">Higüey</option>
+                    <option value="Samaná">Samaná</option>
+                    </select>
+            </div>
+        </div>
+        <div class="card border-dark mb-3 div-fecha">
+            <div class="card-header">¿Cuándo vas a viajar?</div>
+            <div class="card-body" id="fechaInicio">
+                <input type="date" name="fechaInicio">
+                <input type="date" name="fechaFin">
+            </div>
         </div>
     </div>
+    </div>
 
-    <div class="galeria">
+    <div class="galeria" style="display:flex; flex-wrap: nowrap; width: 100%; position: relative; align-items:center; top: 60%;">
 
         <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="City_overview_of_Salvaleón_de_Higüey.jfif" alt="Card image cap">
