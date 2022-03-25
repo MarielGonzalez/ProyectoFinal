@@ -65,8 +65,12 @@
 .galeria {
     width: max-content;
     padding: 5%;
-    margin-left: 50px;
+    margin-left: 10px;
     display: inline-flex;
+}
+
+.card-1 {
+    margin-left: 0.5em;
 }
 
 #titulo {
