@@ -51,3 +51,26 @@
     padding: 0%;
     display: inline;
 }
+
+.cuadro-texto {
+    padding: 10%;
+    background-color: #ebe9e0;
+}
+
+.cuadro-texto div {
+    margin-right: 55%;
+    text-align: justify;
+}
+
+.galeria {
+    width: max-content;
+    padding: 5%;
+    margin-left: 50px;
+    display: inline-flex;
+}
+
+#titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(5, 27, 27);
+}
