@@ -18,21 +18,52 @@
 </head>
 
 <body>
-    <div class="alert alert-dismissible alert-success" style="display: flexbox; margin-bottom: 0%; text-align: center;">
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    <div class="alert alert-dismissible alert-success" style="display: flexbox; margin-bottom: 0%; text-align: center; border-radius: 0px;">
         <strong>Aprovecha 25% de descuento</strong> en tus viajes a Madrid por motivos de Semana Santa <a href="#" class="alert-link">mas informacion Aqui</a>.
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="Logotipo_de_Renfe_Operadora.svg.png" alt="logo" style="width: 80px; height: 60px; margin-left: 15px;"></a>
-        <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#"><img src="Logotipo_de_Renfe_Operadora.svg.png" alt="logo" id="logo"></a>
+
         </button>
 
-        <div id="login"><button class="badge btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap" style="border-style:none; background-color:rgb(163, 67, 147); font-size: medium; "><span class="badge">Iniciar Sesion</span></span><i class="fa-solid fa-user"></i></button>
+        <div class="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Destinos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Novedades</a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="reservas">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="badge">Mis Reservas</span><i class="fa-solid fa-train"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <button id="login" class="badge" data-toggle="modal" data-target="#exampleModal"><span class="badge">Iniciar Sesion</span></span><i class="fa-solid fa-user"></i></button>
+        </div>
+        <div>
+            <button id="login" class="badge" data-toggle="modal" data-target="#exampleModal"><span class="badge">Crear cuenta</span></span><i class="fa-solid fa-user-plus"></i></button>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content modal-window">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">¡Ingresa y disfruta de todas las ventajas!</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -43,33 +74,18 @@
                         <form>
 
                             <div class="form-group">
-                                <label class="form-label mt-4">Floating labels</label>
+                                <label class="form-label mt-4">Email</label>
                                 <div class="form-floating mb-3">
                                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                                     <label for="floatingInput">Email address</label>
                                 </div>
-                                <label class="form-label mt-4">Floating labels</label>
+                                <label class="form-label mt-4">Password</label>
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                    <label for="floatingInput">Email address</label>
+                                    <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Password</label>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="Edad" class="col-form-label">Edad</label>
-                                    <input type="number" class="form-control" id="Edad">
-                                </div>
-                                <div class="form-group">
-                                    <label for="Nombre" class="col-form-label">Nombre</label>
-                                    <input type="email" class="form-control" id="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="col-form-label">Email:</label>
-                                    <input type="email" class="form-control" id="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="pass" class="col-form-label">Password:</label>
-                                    <input type="password" class="form-control" id="pass">
-                                </div>
+
                         </form>
                         </div>
                         <div class="modal-footer">
@@ -80,29 +96,7 @@
                 </div>
             </div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>
 
-                </ul>
-
-            </div>
     </nav>
     <!--Cuadro de reservas de viajes-->
     <div id="ruta" class="Container-ruta">
