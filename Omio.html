@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://www.omio.es/ui/your-bookings/retrieve?locale=es -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="theme-color" content="#132968"><link rel="icon" sizes="192x192" href="https://www.omio.com/gcs-proxy/static_content_repo/web/icons/omio-android-chrome-192x192.png"><link rel="apple-touch-icon" sizes="180x180" href="https://www.omio.com/gcs-proxy/static_content_repo/web/icons/omio-apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://www.omio.com/gcs-proxy/static_content_repo/web/icons/omio-favicon-32x32.png"><link rel="shortcut icon" type="image/x-icon" sizes="48x48" href="https://www.omio.com/gcs-proxy/static_content_repo/web/icons/favicon.ico"><link rel="icon" type="image/png" sizes="16x16" href="https://www.omio.com/gcs-proxy/static_content_repo/web/icons/omio-favicon-16x16.png"><link rel="mask-icon" sizes="16x16" href="https://www.omio.com/gcs-proxy/static_content_repo/web/icons/omio-safari-pinned-tab.svg" color="#132968"><script async="" src="./Omio_files/sp.js.descarga" crossorigin="anonymous"></script><script async="">!function(e,s,o,n,a,l,p){e[a]||(e.GlobalSnowplowNamespace=e.GlobalSnowplowNamespace||[],e.GlobalSnowplowNamespace.push(a),e[a]=function(){(e[a].q=e[a].q||[]).push(arguments)},e[a].q=e[a].q||[],l=s.createElement(o),p=s.getElementsByTagName(o)[0],l.async=1,l.src="//cdn.jsdelivr.net/gh/snowplow/sp-js-assets@2.18.2/sp.js",l.crossOrigin="anonymous",p.parentNode.insertBefore(l,p))}(window,document,"script",0,"snowplow")</script><title>Omio</title><link href="./Omio_files/main.e7110693.chunk.css" rel="stylesheet"><style>/* names from the updated styleguide */
+/* don't use blend(white). Designers always use alpha(x%) */
+:root {
+
+  /* Primary Pallete */
+
+  /* Secondary Pallete */
+}
+:root {
+  /* Fonts */
+
+  /* Margins & Paddings */
+}
+.ModalBody_ModalBody_be236 {
+  width: 100%;
+  line-height: 1.5;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #FFF;
+}
+.ModalBody_footerPadding_be236 {
+  /* enough to cover a row of buttons + 20px */
+  height: 110px;
+}
+</style><style>/* names from the updated styleguide */
+/* don't use blend(white). Designers always use alpha(x%) */
+:root {
+
+  /* Primary Pallete */
+
+  /* Secondary Pallete */
+}
+:root {
+  /* Fonts */
+
+  /* Margins & Paddings */
+}
+.ModalHeader_container_08beb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 56px;
+  width: 100%;
+  font-weight: 600;
+  z-index: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid rgba(19, 41, 104, .1);
+  color: #132968
+}
+.ModalHeader_container_08beb.ModalHeader_withClose_08beb {
+  padding: 0 16px;
+}
+.ModalHeader_container_08beb.ModalHeader_scrolled_08beb {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(19, 41, 104, .1);
+          box-shadow: 0 4px 8px 0 rgba(19, 41, 104, .1);
+}
+.ModalHeader_header_08beb {
+  font-size: 18px;
+  width: 100%;
+  margin-right: auto
+}
+.ModalHeader_header_08beb.ModalHeader_withClose_08beb {
+  width: calc(100% - 18px);
+}
+.ModalHeader_iconClose_08beb {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  position: absolute;
+  color: #717FA4;
+  right: 16px;
+}
+.ModalHeader_iconClose_08beb:hover {
+  color: #A1A9C3;
+}
+.ModalHeader_iconClose_08beb:focus {
+  outline: none;
+}
+@media (min-width: 1024px) {
+  .ModalHeader_header_08beb {
+    font-size: 20px;
+  }
+
+  .ModalHeader_container_08beb {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+</style><style>/* names from the updated styleguide */
+/* don't use blend(white). Designers always use alpha(x%) */
+:root {
+
+  /* Primary Pallete */
+
+  /* Secondary Pallete */
+}
+:root {
+  /* Fonts */
+
+  /* Margins & Paddings */
+}
+.Modal_modal_5050d {
+  display: none;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1200;
+  background: rgba(51, 51, 51, .4);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, .17);
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, .17)
+}
+.Modal_modal_5050d.Modal_centered_5050d {
+  padding: 10px;
+}
+.Modal_modal_5050d.Modal_noZIndex_5050d {
+  z-index: 0;
+}
+.Modal_footer_5050d {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+  -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, .1),
+    0 -2px 6px 0 rgba(19, 41, 104, .1);
+          box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, .1),
+    0 -2px 6px 0 rgba(19, 41, 104, .1);
+  background: #fff;
+  /* higher than two levels of overlay in its children. e.g. sliders with tips */
+  z-index: 3;
+  -webkit-transition: -webkit-transform 0.3s
+    cubic-bezier(0.3, 0, 0, 1);
+  transition: -webkit-transform 0.3s
+    cubic-bezier(0.3, 0, 0, 1);
+  -o-transition: transform 0.3s
+    cubic-bezier(0.3, 0, 0, 1);
+  transition: transform 0.3s
+    cubic-bezier(0.3, 0, 0, 1);
+  transition: transform 0.3s
+    cubic-bezier(0.3, 0, 0, 1), -webkit-transform 0.3s
+    cubic-bezier(0.3, 0, 0, 1);
+}
+.Modal_footerShown_5050d {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.Modal_footerHidden_5050d {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+.Modal_contentWrapper_5050d {
+  background: #FFF;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column
+}
+.Modal_contentWrapper_5050d.Modal_slideDown_5050d {
+  top: 0;
+  bottom: auto;
+  bottom: initial;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .2);
+}
+.Modal_contentWrapper_5050d.Modal_zoom_5050d {
+  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Modal_contentWrapperCentered_5050d {
+  width: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background: #fff;
+  -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, .1),
+    0 16px 16px 0 rgba(19, 41, 104, .2);
+          box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, .1),
+    0 16px 16px 0 rgba(19, 41, 104, .2);
+  border-radius: 8px;
+  overflow: auto;
+}
+.Modal_fullHeight_5050d {
+  height: 100%;
+}
+.Modal_enter_5050d {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out
+}
+.Modal_enter_5050d .Modal_contentWrapper_5050d {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.3s
+      cubic-bezier(0.3, 0, 0, 1);
+  transition: -webkit-transform 0.3s
+      cubic-bezier(0.3, 0, 0, 1);
+  -o-transition: transform 0.3s
+      cubic-bezier(0.3, 0, 0, 1);
+  transition: transform 0.3s
+      cubic-bezier(0.3, 0, 0, 1);
+  transition: transform 0.3s
+      cubic-bezier(0.3, 0, 0, 1), -webkit-transform 0.3s
+      cubic-bezier(0.3, 0, 0, 1)
+}
+.Modal_enter_5050d .Modal_contentWrapper_5050d.Modal_slideDown_5050d {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.Modal_enter_5050d .Modal_contentWrapper_5050d.Modal_slideLeft_5050d {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.Modal_enter_5050d .Modal_contentWrapper_5050d.Modal_zoom_5050d {
+  -webkit-transform: translateY(50%) scale(0.7);
+          transform: translateY(50%) scale(0.7);
+}
+.Modal_enterDone_5050d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Modal_exitDone_5050d {
+  display: none;
+}
+.Modal_modalOpenBodyClass_5050d,
+.Modal_modalOpenBodyClass_5050d body {
+  overflow: hidden;
+}
+/* blocks scroll on iOS */
+.Modal_fullHeightModalOpenBodyClass_5050d,
+.Modal_fullHeightModalOpenBodyClass_5050d body {
+  position: absolute;
+  height: 100%;
+}
+.Modal_enterActive_5050d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1
+}
+.Modal_enterActive_5050d .Modal_contentWrapper_5050d {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%)
+}
+.Modal_enterActive_5050d .Modal_contentWrapper_5050d.Modal_slideDown_5050d {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.Modal_enterActive_5050d .Modal_contentWrapper_5050d.Modal_slideLeft_5050d {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.Modal_enterActive_5050d .Modal_contentWrapper_5050d.Modal_zoom_5050d {
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+.Modal_exit_5050d {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear
+}
+.Modal_exit_5050d .Modal_contentWrapper_5050d {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: -webkit-transform 0.3s
+      cubic-bezier(1, 0, 0.7, 1);
+  transition: -webkit-transform 0.3s
+      cubic-bezier(1, 0, 0.7, 1);
+  -o-transition: transform 0.3s
+      cubic-bezier(1, 0, 0.7, 1);
+  transition: transform 0.3s
+      cubic-bezier(1, 0, 0.7, 1);
+  transition: transform 0.3s
+      cubic-bezier(1, 0, 0.7, 1), -webkit-transform 0.3s
+      cubic-bezier(1, 0, 0.7, 1);
+}
+.Modal_exitActive_5050d {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0
+}
+.Modal_exitActive_5050d .Modal_contentWrapper_5050d {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%)
+}
+.Modal_exitActive_5050d .Modal_contentWrapper_5050d.Modal_slideDown_5050d {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.Modal_exitActive_5050d .Modal_contentWrapper_5050d.Modal_slideLeft_5050d {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+.Modal_exitActive_5050d .Modal_contentWrapper_5050d.Modal_zoom_5050d {
+  -webkit-transform: translateY(0) scale(0.7);
+          transform: translateY(0) scale(0.7);
+  opacity: 0;
+}
+@media (min-width: 1024px) {
+  .Modal_enter_5050d {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear
+  }
+  .Modal_enter_5050d .Modal_contentWrapper_5050d {
+    -webkit-transition: -webkit-transform 0.3s
+        cubic-bezier(0.3, 0, 0, 1);
+    transition: -webkit-transform 0.3s
+        cubic-bezier(0.3, 0, 0, 1);
+    -o-transition: transform 0.3s
+        cubic-bezier(0.3, 0, 0, 1);
+    transition: transform 0.3s
+        cubic-bezier(0.3, 0, 0, 1);
+    transition: transform 0.3s
+        cubic-bezier(0.3, 0, 0, 1), -webkit-transform 0.3s
+        cubic-bezier(0.3, 0, 0, 1);
+  }
+
+  .Modal_exit_5050d {
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear
+  }
+
+  .Modal_exit_5050d .Modal_contentWrapper_5050d {
+    -webkit-transition: -webkit-transform 0.3s
+        cubic-bezier(1, 0, 0.7, 1);
+    transition: -webkit-transform 0.3s
+        cubic-bezier(1, 0, 0.7, 1);
+    -o-transition: transform 0.3s
+        cubic-bezier(1, 0, 0.7, 1);
+    transition: transform 0.3s
+        cubic-bezier(1, 0, 0.7, 1);
+    transition: transform 0.3s
+        cubic-bezier(1, 0, 0.7, 1), -webkit-transform 0.3s
+        cubic-bezier(1, 0, 0.7, 1);
+  }
+}
+</style><style data-styled="active" data-styled-version="5.3.3"></style><script charset="utf-8" src="./Omio_files/chunk-locale6-92aee8.js.descarga" crossorigin="anonymous"></script></head><body ontouchstart=""><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="App"><div class="sc-fKVqWL lhXECT"><header class="sc-gnnDb cqefSy"><div class="Wrapper-sc-13uev3x GWXOi"><div class="HeaderContainer-sc-34oxfe QzNHh"><div class="Wrapper-sc-tywwgh lkrcsy singleLogo"><a href="https://www.omio.es/" class="LogoLink-sc-1632sp1 hNdYft"><div class="OmioImageWrapper-sc-5silid glxFAg"><img src="./Omio_files/omio-logo-blue.svg" alt="Omio logo" class="sc-bdvvtL jjmaYS"></div></a></div><div width="1" class="sc-egiyK sc-bqiRlB exdrYZ lmsiOl"><div class="sc-iAKWXU clRYZG"><button type="button" class="sc-fbyfCU krCWRY"><div class="sc-GEbAx kenSRj"><span>Iniciar sesión</span></div></button></div><div class="sc-iAKWXU HPRqF"><div class="sc-fydGpi fYpDKr"><div role="button" tabindex="0" data-e2e="sign-in-link" class="sc-bGaVxB gDNPaN"><span>Iniciar sesión</span></div><div role="button" tabindex="0" data-e2e="sign-up-link" class="sc-bGaVxB fOGQTO"><span>Crear una cuenta</span></div></div></div></div></div></div></header><main><div class="sc-bBHxTw MwULi"><div class="sc-kfPuZi sc-iwjdpV davPCq cTqcZ"><div class="sc-egiyK eUmjEo"><h1 class="sc-hKwDye fbFoBr"><span>Tus reservas</span></h1></div></div></div><div class="sc-bBHxTw MwULi"><div class="sc-kfPuZi sc-iwjdpV davPCq cTqcZ"><div class="sc-dlVxhl eHXwrB"><section class="sc-cidDSM doLfVw"><section class="sc-caiLqq cnCyKP"><div direction="column" class="sc-egiyK sc-bqiRlB sc-ksdxgE ddmScE lmsiOl cxbAMw"><div direction="column" class="sc-egiyK sc-bqiRlB sc-ksdxgE ddmScE lmsiOl LpXBd"><h2 class="sc-jRQBWg elvOuQ"><span>Recupera tu reserva</span></h2><p class="sc-pVTFL cSzJDf"><span>Introduce tu número de reserva y email para acceder a tu billete. Encontrarás tu número de reserva en el email de confirmación.</span></p></div><form action="https://www.omio.es/ui/your-bookings/retrieve?locale=es#" gap="medium" direction="column" class="sc-egiyK sc-bqiRlB sc-ksdxgE ddmScE lmsiOl LpXBd"><div direction="column,column,row" class="sc-egiyK sc-bqiRlB sc-ksdxgE ddmScE lmsiOl MoGw"><div class="sc-egiyK hdVyOH"><label class="sc-ezbkAF kOczVN"><div class="sc-iJKOTD kXEfvp">Número de reserva</div><div class="sc-giYglK gcZVki"><div class="sc-hiCibw iFsJxA"><input type="text" name="bookingReference" data-e2e="booking-reference-input" label="Número de reserva" class="sc-cCcXHH fYaBjB" value=""></div></div></label></div><div class="sc-egiyK hdVyOH"><label class="sc-ezbkAF kOczVN"><div class="sc-iJKOTD kXEfvp">Email</div><div class="sc-giYglK gcZVki"><div class="sc-hiCibw iFsJxA"><input type="text" name="email" data-e2e="email-input" label="Email" class="sc-cCcXHH fYaBjB" value=""></div></div></label></div></div><div width="1,1,0.5" class="sc-egiyK eZAQtT"><button type="submit" disabled="" data-e2e="retrieve-booking-button" class="sc-hBUSln fJooeD"><div class="sc-fotOHu fLmipN"><span>Recuperar reserva</span></div></button></div></form></div></section></section></div><div class="sc-dlVxhl eHXwrB sc-egiyK sc-bqiRlB hBFvyA lmsiOl"><div height="100" class="sc-gsDKAQ ekyFFN"><img src="./Omio_files/email-tickets.svg" height="100" loading="lazy" class="sc-bdvvtL nxhTp"></div></div></div></div></main></div></div></div><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,latin-ext,cyrillic" rel="stylesheet"><link href="./Omio_files/font.css" rel="stylesheet"><script src="./Omio_files/polyfill.min.js.descarga" crossorigin="anonymous"></script><script>!function(e){function r(r){for(var n,i,f=r[0],l=r[1],a=r[2],p=0,s=[];p<f.length;p++)i=f[p],o[i]&&s.push(o[i][0]),o[i]=0;for(n in l)Object.prototype.hasOwnProperty.call(l,n)&&(e[n]=l[n]);for(c&&c(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var l=t[f];0!==o[l]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={2:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="https://ui.cdn-goeuro.com/ui/";var f=window.webpackJsonp=window.webpackJsonp||[],l=f.push.bind(f);f.push=r,f=f.slice();for(var a=0;a<f.length;a++)r(f[a]);var c=l;t()}([])</script><script src="./Omio_files/1.0e6c897b.chunk.js.descarga"></script><script src="./Omio_files/main.6a8818a6.chunk.js.descarga"></script><script defer="" src="./Omio_files/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6f5da592bfd0f1ca&quot;,&quot;token&quot;:&quot;851d8cac5ee347a2b7ccd494be99d49a&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+<script src="./Omio_files/main-d6aa73.js.descarga" crossorigin="anonymous"></script></body></html>

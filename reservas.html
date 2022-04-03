@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renfe ES</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="_variables.scss">
+    <link rel="stylesheet" href="_bootstrap.scss">
+    <script src="https://kit.fontawesome.com/357aebe863.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="Logotipo_de_Renfe_Operadora.svg.png" alt="logo" id="logo"></a>
+
+        </button>
+
+        <div class="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Destinos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Novedades</a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="reservas">
+
+        </div>
+
+        <div>
+            <button id="login" class="badge" data-toggle="modal" data-target="#exampleModal"><span class="badge">Iniciar Sesion</span></span><i class="fa-solid fa-user"></i></button>
+        </div>
+        <div>
+            <button id="login" class="badge" data-toggle="modal" data-target="#exampleModal"><span class="badge">Crear cuenta</span></span><i class="fa-solid fa-user-plus"></i></button>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content modal-window">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">¡Ingresa y disfruta de todas las ventajas!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="form-group">
+                                <label class="form-label mt-4">Email</label>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <label class="form-label mt-4">Password</label>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Password</label>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+
+    <h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 50px; text-align: justify; margin-left: 50px;">Tus Reservas</h4>
+
+
+    <div class="card mb-3" style="max-width: 50rem;" id="reservas-card">
+        <div class="card-header">
+            <h6>Accede a tus reservas</h6>
+        </div>
+        <div class="card-body">
+            <p>Nullam est lacus, suscipit ut, dapibus quis, condimentum ac, risus. Vivamus vestibulum, ipsum sollicitudin faucibus pharetra, dolor metus fringilla dui, vel aliquet pede diam tempor tortor.</p>
+            <form>
+
+                <div class="form-group">
+                    <label class="form-label mt-4">Email</label>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <label class="form-label mt-4">Password</label>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingInput" placeholder="">
+                        <label for="floatingInput">Password</label>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <img src="Traveling-amico.svg" alt="ticket-train" id="reserva-image">
+
+
+</body>
+
+</html>
