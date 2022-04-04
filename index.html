@@ -99,14 +99,29 @@
     <!--Cuadro de reservas de viajes-->
     <div id="ruta" class="Container-ruta">
         <!--div 1-->
+
+        <div class="card border-dark mb-3 div-ruta">
+            <div class="card-header">Tipo de Viaje</div>
+            <div class="card-body div-ruta">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check button" name="btnradio" id="btnradio1" autocomplete="off" checked="">
+                    <label class="btn btn-outline-primary" for="btnradio1">Ida</label>
+                    <input type="radio" class="btn-check button" name="btnradio" id="btnradio2" autocomplete="off" checked="">
+                    <label class="btn btn-outline-primary" for="btnradio2">Ida y Vuelta</label>
+
+                </div>
+            </div>
+        </div>
+
         <div class="card border-dark mb-3 div-ruta">
             <div class="card-header">Desde</div>
             <div class="card-body div-ruta">
                 <select name="Ciudad" id="Ciudad" class="">
-                    <option value="Santo Domingo - Zona Orienta">Madrid</option>
-                    <option value="Santiago">Zaragoza</option>
-                    <option value="Higüey">Bilboa</option>
-                    <option value="Samaná">Granada</option>
+                    <option value="Default"></option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Zaragoza">Zaragoza</option>
+                    <option value="Bilboa">Bilboa</option>
+                    <option value="Granada">Granada</option>
                     </select>
             </div>
         </div>
@@ -117,22 +132,30 @@
             <div class="card-header">Hasta</div>
             <div class="card-body div-ruta">
                 <select name="Ciudad" id="Ciudad" class="">
-                    <option value="Santo Domingo - Zona Orienta">Madrid</option>
-                    <option value="Santiago">Zaragoza</option>
-                    <option value="Higüey">Bilboa</option>
-                    <option value="Samaná">Granada</option>
+                    <option value="Default"></option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Zaragoza">Zaragoza</option>
+                    <option value="Bilboa">Bilboa</option>
+                    <option value="Granada">Granada</option>
                     </select>
             </div>
         </div>
         <div class="card border-dark mb-3 div-fecha">
             <div class="card-header">¿Cuándo vas a viajar?</div>
             <div class="card-body" id="fechaInicio">
-                <span>Fecha de Partida</span> <input type="date" name="fechaInicio">
-                <span>Fecha de Regreso</span> <input type="date" name="fechaFin">
+                <Label>Fecha de Ida/Vuelta:</Label><input type="date" name="fechaInicio" class="fecha">
+                <input type="date" name="fechaFin" class="fecha">
             </div>
         </div>
+        <div class="card border-dark mb-3 div-ruta">
+            <div class="card-header">Hora de Salida</div>
+            <div class="card-body div-ruta">
+                <input type="time" name="hora" id="hora">
+            </div>
+        </div>
+        <button id="search">Buscar Viajes Disponibles</button>
     </div>
-    </div>
+
 
 
     <!--Background-->
@@ -142,7 +165,7 @@
     <!--Background-->
     <div class="cuadro-texto">
         <div class="div-cuadro">
-            <h6>Los mejores precios para viajar en tren.</h6>
+            <h3>Los mejores precios para viajar en tren.</h3>
             <p class="lead" style="font-size: smaller;">Consulta todos los detalles de los billetes Básico, Elige y Prémium. Comprando con antelación, conseguirás los precios más baratos. Recuerda que los billetes para viajar en trenes Ave y Larga Distancia son nominativos, así podemos contactar
                 contigo en caso de necesidad. Cuando viajes, no olvides llevar un documento de identidad vigente con fotografía (DNI, Permiso de Conducir, Tarjeta de Residencia o Pasaporte).</p>
 
