@@ -6,15 +6,22 @@ body {
 .Container-ruta {
     display: flex;
     flex-wrap: nowrap;
-    width: 50%;
+    width: 900px;
+    height: 200px;
     position: absolute;
     align-items: center;
     top: 60%;
-    left: 20%;
+    left: 15em;
+    margin-top: 5em;
+    border-radius: 3px;
 }
 
+#idaVuelta {}
+
 .navbar {
-    background-color: violet;
+    border-color: none;
+    border-radius: 0%;
+    background-color: rgb(229, 160, 229);
 }
 
 #login {
@@ -24,7 +31,7 @@ body {
 }
 
 #ruta {
-    background-color: rgba(92, 4, 61, 0.548);
+    background-color: rgb(245, 237, 242);
     position: absolute;
     margin-left: -290px;
     width: 75em;
@@ -40,11 +47,21 @@ body {
     margin-left: 5px;
     padding: 0%;
     padding-bottom: 3px;
-    padding-top: 3px;
+    padding-top: 5px;
 }
 
 .fecha {
     width: 140px;
+}
+
+#hora {
+    margin-left: 15px;
+}
+
+#search {
+    margin-left: 10px;
+    width: 150px;
+    padding: 0%;
 }
 
 .div-ruta select {
@@ -53,6 +70,12 @@ body {
 
 .button {
     width: 5px;
+}
+
+.buttons-ruta {
+    width: 5px;
+    position: relative;
+    left: 13px;
 }
 
 .div-fecha {

@@ -18,10 +18,6 @@
 </head>
 
 <body>
-    <div class="alert alert-dismissible alert-success" style="display: flexbox; margin-bottom: 0%; text-align: center; border-radius: 0px;">
-        <strong>Aprovecha 25% de descuento</strong> en tus viajes a Madrid por motivos de Semana Santa <a href="#" class="alert-link">mas informacion Aqui</a>.
-    </div>
-
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html"><img src="Logotipo_de_Renfe_Operadora.svg.png" alt="logo" id="logo"></a>
         </button>
@@ -100,10 +96,10 @@
     <div id="ruta" class="Container-ruta">
         <!--div 1-->
 
-        <div class="card border-dark mb-3 div-ruta">
-            <div class="card-header">Tipo de Viaje</div>
+        <div class="card border-dark mb-3 div-ruta" id="idaVuelta">
+
             <div class="card-body div-ruta">
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <div class="btn-group buttons-ruta" role="group" aria-label="Basic radio toggle button group">
                     <input type="radio" class="btn-check button" name="btnradio" id="btnradio1" autocomplete="off" checked="">
                     <label class="btn btn-outline-primary" for="btnradio1">Ida</label>
                     <input type="radio" class="btn-check button" name="btnradio" id="btnradio2" autocomplete="off" checked="">
@@ -143,7 +139,7 @@
         <div class="card border-dark mb-3 div-fecha">
             <div class="card-header">¿Cuándo vas a viajar?</div>
             <div class="card-body" id="fechaInicio">
-                <Label>Fecha de Ida/Vuelta:</Label><input type="date" name="fechaInicio" class="fecha">
+                <Label>Fecha de salida:</Label><input type="date" name="fechaInicio" class="fecha">
                 <input type="date" name="fechaFin" class="fecha">
             </div>
         </div>
@@ -153,13 +149,13 @@
                 <input type="time" name="hora" id="hora">
             </div>
         </div>
-        <button id="search">Buscar Viajes Disponibles</button>
+        <button class="btn-outline-primary my-2 my-sm-0 div-ruta" type="submit" id="search"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
     </div>
 
 
 
     <!--Background-->
-    <img src="tren.jpg" class="img-fluid" alt="Responsive image" style="width: 100%; height: 500px;">
+    <img src="tren.jpg" alt="Responsive image" style="width: 100%; height: 600px;">
     <!--Background-->
 
     <!--Background-->
