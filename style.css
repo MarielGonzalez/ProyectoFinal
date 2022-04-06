@@ -6,12 +6,13 @@ body {
 .Container-ruta {
     display: flex;
     flex-wrap: nowrap;
-    width: 900px;
-    height: 200px;
+    width: 100em;
+    height: 160px;
     position: absolute;
     align-items: center;
-    top: 60%;
+    top: 21em;
     left: 15em;
+    right: 10em;
     margin-top: 5em;
     border-radius: 3px;
 }
@@ -21,7 +22,7 @@ body {
 .navbar {
     border-color: none;
     border-radius: 0%;
-    background-color: rgb(229, 160, 229);
+    background-color: rgb(142, 139, 141);
 }
 
 #login {
@@ -31,19 +32,22 @@ body {
 }
 
 #ruta {
-    background-color: rgb(245, 237, 242);
+    background-color: rgb(199, 116, 138);
     position: absolute;
-    margin-left: -290px;
-    width: 75em;
+    margin-left: -260px;
+    margin-right: -150px;
+    width: 73.3em;
 }
 
 #search {
-    width: 100px;
+    width: 80px;
+    padding-left: 15px;
+    margin-right: 10px;
 }
 
 .div-ruta {
     display: inline-block;
-    width: 200px;
+    width: 220px;
     margin-left: 5px;
     padding: 0%;
     padding-bottom: 3px;
@@ -69,11 +73,12 @@ body {
 }
 
 .button {
-    width: 5px;
+    width: 1px;
+    padding-left: 15px;
 }
 
 .buttons-ruta {
-    width: 5px;
+    width: 1px;
     position: relative;
     left: 13px;
 }
@@ -89,16 +94,16 @@ body {
 
 .cuadro-texto {
     padding: 8%;
-    background-color: #b49cb4c6;
+    background-color: #d9c7d9c6;
+    height: 500px;
 }
 
 .cuadro-texto img {
-    width: 400px;
+    width: 500px;
     height: 400px;
-    margin-bottom: 0em;
-    display: inline-block;
-    margin-left: 5em;
-    margin-right: 200px;
+    position: absolute;
+    left: 45em;
+    top: 38em;
 }
 
 .cuadro-texto div {
@@ -106,23 +111,26 @@ body {
     text-align: justify;
     padding-left: 0%;
     display: inline-block;
-    background-color: aqua;
 }
 
 .galeria {
     width: 100px;
     padding-left: 7%;
-    margin-left: 27px;
+    padding-right: 1%;
+    margin-left: 11px;
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
+    width: 90%;
     position: relative;
-    align-items: center;
     top: 60%;
 }
 
 .card-1 {
-    margin-left: 0.5em;
+    margin-left: 1.5em;
+    padding-bottom: 1.8em;
+    margin-bottom: 5em;
+    background-color: rgb(230, 158, 168);
+    width: 80%
 }
 
 #destinos {
@@ -189,4 +197,136 @@ body {
     border-color: rgba(230, 176, 204, 0.345);
     background-color: lavenderblush;
     margin-top: 30px;
+}
+
+#block-button {
+    background-color: rgb(163, 67, 147);
+    width: 300px;
+    color: aliceblue;
+    font-size: large;
+}
+
+
+/*footer*/
+
+.col_white_amrc {
+    color: #FFF;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(66, 59, 64);
+    min-height: 250px;
+    padding: 10px 0px 25px 0px;
+}
+
+.pt2 {
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #CCC;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+}
+
+.mb10 {
+    padding-bottom: 15px;
+}
+
+.footer_ul_amrc {
+    margin: 0px;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
+}
+
+.footer_ul_amrc li {
+    padding: 0px 0px 5px 0px;
+}
+
+.footer_ul_amrc li a {
+    color: #CCC;
+}
+
+.footer_ul_amrc li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fleft {
+    float: left;
+}
+
+.padding-right {
+    padding-right: 10px;
+}
+
+.footer_ul2_amrc {
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footer_ul2_amrc li p {
+    display: table;
+}
+
+.footer_ul2_amrc li a:hover {
+    text-decoration: none;
+}
+
+.footer_ul2_amrc li i {
+    margin-top: 5px;
+}
+
+.bottom_border {
+    border-bottom: 1px solid #323f45;
+    padding-bottom: 20px;
+}
+
+.foote_bottom_ul_amrc {
+    list-style-type: none;
+    padding: 0px;
+    display: table;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+.foote_bottom_ul_amrc li {
+    display: inline;
+}
+
+.foote_bottom_ul_amrc li a {
+    color: #999;
+    margin: 0 12px;
+}
+
+.social_footer_ul {
+    display: table;
+    margin: 15px auto 0 auto;
+    list-style-type: none;
+}
+
+.social_footer_ul li {
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.social_footer_ul li a {
+    color: #CCC;
+    border: 1px solid #CCC;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.social_footer_ul li i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
 }
