@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renfe ES</title>
+    <title>Renfe ES | Home </title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" type="text/css" href="slide navbar style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -92,49 +92,57 @@
     <!--Cuadro de reservas de viajes-->
     <div id="ruta" class="Container-ruta">
         <!--div 1-->
-
-        <div class="card border-dark mb-3 div-ruta" id="idaVuelta">
-
-            <div class="card-body div-ruta">
-                <div class="btn-group buttons-ruta" role="group" aria-label="Basic radio toggle button group">
-
-
-                </div>
-            </div>
-        </div>
-
-        <div class="card border-dark mb-3 div-ruta">
-            <div class="card-header">Desde</div>
-            <div class="card-body div-ruta">
-                <select name="Ciudad" id="Ciudad" class="">
-                    <option value="Default"></option>
-                    <option value="Madrid">Madrid</option>
-                    <option value="Zaragoza">Zaragoza</option>
-                    <option value="Bilboa">Bilboa</option>
-                    <option value="Granada">Granada</option>
-                    </select>
+        <div style="margin-left: 15px; margin-bottom: 13px;">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">Ida</button>
+                <button type="button" class="btn btn-secondary">Vuelta</button>
+                <button type="button" class="btn btn-secondary">Ida y Vuelta</button>
             </div>
         </div>
 
         <br>
         <!--div 2-->
-        <div class="card border-dark mb-3 div-ruta">
-            <div class="card-header">Hasta</div>
-            <div class="card-body div-ruta">
-                <select name="Ciudad" id="Ciudad" class="">
-                    <option value="Default"></option>
-                    <option value="Madrid">Madrid</option>
-                    <option value="Zaragoza">Zaragoza</option>
-                    <option value="Bilboa">Bilboa</option>
-                    <option value="Granada">Granada</option>
-                    </select>
-            </div>
-        </div>
-        <div class="card border-dark mb-3 div-fecha">
-            <div class="card-header">¿Cuándo vas a viajar?</div>
-            <div class="card-body" id="fechaInicio">
 
+        <div class="dropdown div-ruta">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Selecciona Origen
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Madrid</a></li>
+                <li><a class="dropdown-item" href="#">Granada</a></li>
+                <li><a class="dropdown-item" href="#">Zaragosa</a></li>
+                <li><a class="dropdown-item" href="#">Bilboa</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown div-ruta">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Selecciona Destino
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Madrid</a></li>
+                <li><a class="dropdown-item" href="#">Granada</a></li>
+                <li><a class="dropdown-item" href="#">Zaragosa</a></li>
+                <li><a class="dropdown-item" href="#">Bilboa</a></li>
+            </ul>
+        </div>
+
+
+        <div class="card border-dark mb-3 div-fecha">
+            <div class="card-header">Detalles de Viaje:</div>
+            <div class="card-body" id="fechaInicio">
+                <i class="fa-solid fa-ticket"></i> Cantidad de tickets: <input type="number" name="" id="" style="width: 3em;"> Pasajero Especial: <i class="fa-solid fa-wheelchair"></i><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                    style="width: 1em;">
+                <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+
+                <input class="form-check-input" type="checkbox">
+
+                <i class="fa-solid fa-baby-carriage"></i>
             </div>
+
+
         </div>
         <div class="card border-dark mb-3 div-ruta">
             <div class="card-header">Hora de Salida</div>
@@ -142,7 +150,7 @@
                 <input type="time" name="hora" id="hora">
             </div>
         </div>
-        <button class="btn-outline-primary my-2 my-sm-0 div-ruta" type="submit" id="search" onclick="EncontrarViajes()"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
+        <button class=" btn btn-secondary div-ruta" type="submit" id="search" onclick="EncontrarViajes()"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
     </div>
 
 
@@ -178,7 +186,7 @@
                 <img class="card-img-top" src="Madrid.jpg" alt="Card image cap" style="height: 10rem;">
                 <div class="card-body">
                     <h5 class="card-title">Madrid</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Capital de España y conocida habitualmente como Villa y Corte, Madrid es la mayor ciudad del país y la segunda de la Unión Europea, con una población de más de 3 millones de habitantes (más de 6 en el área metropolitana).</p>
 
                 </div>
             </div>
@@ -186,7 +194,8 @@
                 <img class="card-img-top" src="granada.jpg" alt="Card image cap" style="height: 10rem;">
                 <div class="card-body">
                     <h5 class="card-title">Granada</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Granada está situada a los pies de Sierra Nevada, la cadena montañosa más alta de la Península Ibérica. Aparte de la bella visión que ofrece desde la ciudad, Sierra Nevada cuenta con una de las estaciones de esquí más importantes de
+                        España, la más meriodional de Europa y la única de Andalucía.</p>
 
                 </div>
             </div>
@@ -194,7 +203,8 @@
                 <img class="card-img-top" src="Zaragosa.jpg" alt="Card image cap" style="height: 10rem;">
                 <div class="card-body">
                     <h5 class="card-title">Zaragosa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Con una población de 681 877 habitantes (INE 2020)​ es la quinta ciudad más poblada del país, tras Madrid, Barcelona, Valencia y Sevilla. Está situada a orillas de los ríos Ebro, Huerva y Gállego y del Canal Imperial de Aragón, en
+                        el centro de un amplio valle.</p>
 
                 </div>
             </div>
@@ -202,7 +212,7 @@
                 <img class="card-img-top" src="Bilboa.jpg" alt="Card image cap" style="height: 10rem;">
                 <div class="card-body">
                     <h5 class="card-title">Bilboa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Bilbao​ (en euskera, Bilbo)​ es un municipio situado en el norte de España y una villa de dicho municipio, capital de la provincia y territorio histórico de Vizcaya, en la comunidad autónoma del País Vasco.</p>
 
                 </div>
             </div>
@@ -267,6 +277,62 @@
                     <span class="fa fa-star"></span></td>
 
             </tr>
+            <tr class="table-light">
+                <th scope="row">Tren directo rapido</th>
+                <td>2 vagones</td>
+                <td>FAST-100A Madrid-Granada</td>
+                <td>120 MAX</td>
+                <td>1 hrs 30 mín</td>
+                <td>118 €</td>
+                <td><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span></td>
+
+            </tr>
+            <tr class="table-light">
+                <th scope="row">Tren directo rapido Granada-Zaragosa (con tramo de intercambio)</th>
+                <td>2 vagones</td>
+                <td>FAST-100A </td>
+                <td>120 MAX</td>
+                <td>1 hrs 30 mín</td>
+                <td>118 €</td>
+                <td><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span></td>
+
+            </tr>
+            <tr class="table-light">
+                <th scope="row">Tren directo rapido Bilboa-Zaragosa</th>
+                <td>2 vagones</td>
+                <td>FAST-100A</td>
+                <td>120 MAX</td>
+                <td>1 hrs 30 mín</td>
+                <td>118 €</td>
+                <td><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span></td>
+
+            </tr>
+            <tr class="table-light">
+                <th scope="row">Tren directo rapido</th>
+                <td>2 vagones</td>
+                <td>FAST-100A</td>
+                <td>120 MAX</td>
+                <td>1 hrs 30 mín</td>
+                <td>118 €</td>
+                <td><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span></td>
+
+            </tr>
 
         </tbody>
     </table>
@@ -277,60 +343,61 @@
         <div class="container bottom_border">
             <div class="row">
                 <div class=" col-sm-4 col-md col-sm-4  col-12 col">
-                    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+                    <h5 class="headin5_amrc col_white_amrc pt2">Tu confianza es importante
+                    </h5>
                     <!--headin5_amrc-->
-                    <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                    <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
-                    <p><i class="fa fa-phone"></i> +91-9999878398 </p>
-                    <p><i class="fa fa fa-envelope"></i> info@example.com </p>
+                    <p class="mb10">Recuerda que hemos puesto en marcha un amplio conjunto de medidas, certificadas por AENOR y SGS, para que disfrutes de un viaje seguro y tranquilo. Conócelas.
 
-
+                    </p>
                 </div>
 
 
                 <div class=" col-sm-4 col-md  col-6 col">
-                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                    <h5 class="headin5_amrc col_white_amrc pt2">Grupo Renfe</h5>
                     <!--headin5_amrc-->
                     <ul class="footer_ul_amrc">
-                        <li><a href="http://webenlance.com">Image Rectoucing</a></li>
-                        <li><a href="http://webenlance.com">Clipping Path</a></li>
-                        <li><a href="http://webenlance.com">Hollow Man Montage</a></li>
-                        <li><a href="http://webenlance.com">Ebay & Amazon</a></li>
-                        <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
-                        <li><a href="http://webenlance.com">Image Cropping</a></li>
+                        <li><a href="http://webenlance.com">Transporte sostenible</a></li>
+                        <li><a href="http://webenlance.com">Comunicación</a></li>
+                        <li><a href="http://webenlance.com">Empleo y talento</a></li>
+                        <li><a href="http://webenlance.com">Gobierno corporativo y transparencia</a></li>
+                        <li><a href="http://webenlance.com">Contratación</a></li>
+
                     </ul>
                     <!--footer_ul_amrc ends here-->
                 </div>
 
 
                 <div class=" col-sm-4 col-md  col-6 col">
-                    <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+                    <h5 class="headin5_amrc col_white_amrc pt2">Ayuda</h5>
                     <!--headin5_amrc-->
                     <ul class="footer_ul_amrc">
-                        <li><a href="http://webenlance.com">Remove Background</a></li>
-                        <li><a href="http://webenlance.com">Shadows & Mirror Reflection</a></li>
-                        <li><a href="http://webenlance.com">Logo Design</a></li>
-                        <li><a href="http://webenlance.com">Vectorization</a></li>
-                        <li><a href="http://webenlance.com">Hair Masking/Clipping</a></li>
-                        <li><a href="http://webenlance.com">Image Cropping</a></li>
+                        <li><a href="http://webenlance.com">Cambiar billete</a></li>
+                        <li><a href="http://webenlance.com">Anular billete</a></li>
+                        <li><a href="http://webenlance.com">Cercanías</a></li>
+                        <li><a href="http://webenlance.com">Teléfonos de atención de Renfe</a></li>
+                        <li><a href="http://webenlance.com">Contactar con Renfe</a></li>
+                        <li> <b><a href="http://webenlance.com">Ver Mas</a></b> </li>
                     </ul>
                     <!--footer_ul_amrc ends here-->
                 </div>
 
 
                 <div class=" col-sm-4 col-md  col-12 col">
-                    <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+                    <h5 class="headin5_amrc col_white_amrc pt2">Rutas en Tren</h5>
                     <!--headin5_amrc ends here-->
 
                     <ul class="footer_ul2_amrc">
-                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-                            <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+                        <li>
+                            </a>
+                            <p><a href="#">Madrid-Barcelona</a></p>
                         </li>
-                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-                            <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+                        <li>
+                            <a href="#"></a>
+                            <p><a href="#">Barcelona-Madrid</a></p>
                         </li>
-                        <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a>
-                            <p>Lorem Ipsum is simply dummy text of the printing...<a href="#">https://www.lipsum.com/</a></p>
+                        <li>
+                            <a href="#"></a>
+                            <p><a href="#">València-Barcelona</a></p>
                         </li>
                     </ul>
                     <!--footer_ul2_amrc ends here-->
@@ -340,16 +407,11 @@
 
 
         <div class="container">
-            <ul class="foote_bottom_ul_amrc">
-                <li><a href="http://webenlance.com">Home</a></li>
-                <li><a href="http://webenlance.com">About</a></li>
-                <li><a href="http://webenlance.com">Services</a></li>
-                <li><a href="http://webenlance.com">Pricing</a></li>
-                <li><a href="http://webenlance.com">Blog</a></li>
-                <li><a href="http://webenlance.com">Contact</a></li>
-            </ul>
+
             <!--foote_bottom_ul_amrc ends here-->
-            <p class="text-center">Copyright @2017 | Designed With by <a href="#">Your Company Name</a></p>
+            <p class="text-center">Copyright @2022 | Todos los derechos reservados
+                <a href="#"></a>
+            </p>
 
             <ul class="social_footer_ul">
                 <li><a href="http://webenlance.com"><i class="fab fa-facebook-f"></i></a></li>

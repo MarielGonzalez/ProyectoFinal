@@ -32,14 +32,13 @@ body {
 }
 
 #ruta {
-    background-color: rgb(199, 116, 138);
     position: absolute;
     margin-left: -260px;
     margin-right: -150px;
     width: 73.3em;
 }
 
-#search {
+input #search {
     width: 80px;
     padding-left: 15px;
     margin-right: 10px;
@@ -47,11 +46,13 @@ body {
 
 .div-ruta {
     display: inline-block;
-    width: 220px;
-    margin-left: 5px;
+    width: 300px;
     padding: 0%;
     padding-bottom: 3px;
     padding-top: 5px;
+    margin-top: 17px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .fecha {
@@ -192,11 +193,15 @@ body {
 
 #reservas-card {
     display: inline-block;
-    margin-left: 50px;
-    width: 700px;
-    border-color: rgba(230, 176, 204, 0.345);
-    background-color: lavenderblush;
-    margin-top: 30px;
+    margin-left: 40px;
+    width: 800px;
+    bottom: 5em;
+    height: 500px;
+    border-color: rgba(134, 92, 114, 0.345);
+    background-color: rgb(227, 202, 210);
+    margin-top: 0px;
+    padding: 0%;
+    margin-bottom: 300px;
 }
 
 #block-button {
