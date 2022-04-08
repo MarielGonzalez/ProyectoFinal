@@ -1,5 +1,5 @@
 function EncontrarViajes() {
-    window.location.href = "file://ProyectoFinal/form.html";
+    window.location.href = "form.html";
 }
 
 function AccederReservas() {
