@@ -23,18 +23,16 @@
         <div class="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link " href="#destinos" style="font-size: larger;"><span class="badge">Destinos</a></span>
+                    <a style="color: whitesmoke; font-weight: 700;" class="nav-link" href="index.html#destinos">Destinos</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a style="font-size: larger;" class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="badge">Novedades</a></span>
-
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Viajes destacados</a>
-                            <a class="dropdown-item" href="#">Ofertas y Promociones</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Informaciones sobre COVID-19</a>
-                        </div>
+                    <a style="color: whitesmoke; font-weight: 700;" class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true">Novedades</a>
+                    <div class="dropdown-menu" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 52px);">
+                        <a class="dropdown-item" href="#">Viajes destacados</a>
+                        <a class="dropdown-item" href="#">Ofertas y Promociones</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Informaciones sobre COVID-19</a>
+                    </div>
                 </li>
             </ul>
 
@@ -92,7 +90,7 @@
     <!--Cuadro de reservas de viajes-->
     <div id="ruta" class="Container-ruta">
         <!--div 1-->
-        <div style="margin-left: 15px; margin-bottom: 13px;">
+        <div style="margin-bottom: 13px;">
             <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-secondary">Ida</button>
                 <button type="button" class="btn btn-secondary">Vuelta</button>
@@ -127,33 +125,27 @@
             </ul>
         </div>
 
+        <div class="dropdown">
+            <div class="btn btn-secondary" style="width: 300px; left: 20px; bottom: -20px;">
+                Detalles de Viaje:
+                <div class="card-body">
+                    <i class="fa-solid fa-ticket"></i> Cantidad de tickets: <br> <i class="fa-solid fa-baby-carriage"></i> <i class="fa-solid fa-wheelchair"></i> Pasajero Especial:
 
-        <div class="card border-dark mb-3 div-fecha">
-            <div class="card-header">Detalles de Viaje:</div>
-            <div class="card-body" id="fechaInicio">
-                <i class="fa-solid fa-ticket"></i> Cantidad de tickets: <input type="number" name="" id="" style="width: 3em;"> Pasajero Especial: <i class="fa-solid fa-wheelchair"></i><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
-                    style="width: 1em;">
-                <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
-                    </label>
-
-                <input class="form-check-input" type="checkbox">
-
-                <i class="fa-solid fa-baby-carriage"></i>
+                </div>
             </div>
         </div>
 
-        <div class="div-ruta">
-            <div class="btn">
+        <div class="div-ruta" style="margin-left: 0px; margin-right: 0px; left: 200em; padding: 0px;">
+            <div class="btn btn-secondary">
                 <div>
                     Hora de Salida<input type="time" name="hora" id="hora">
                 </div>
             </div>
 
         </div>
+        <button class=" btn btn-secondary div-ruta" type="submit" id="search" onclick="EncontrarViajes()"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
 
     </div>
-    <button class=" btn btn-secondary div-ruta" type="submit" id="search" onclick="EncontrarViajes()"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
 
 
 

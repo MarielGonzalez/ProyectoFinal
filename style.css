@@ -34,7 +34,7 @@ body {
 #ruta {
     position: absolute;
     margin-left: -260px;
-    margin-right: -150px;
+    margin-right: -100px;
     width: 73.3em;
 }
 
@@ -45,22 +45,28 @@ input #search {
 }
 
 .div-ruta {
-    display: inline-block;
-    width: 300px;
+    display: inline;
+    width: 250px;
     padding: 0%;
-    padding-bottom: 3px;
-    padding-top: 5px;
-    margin-top: 17px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
 .fecha {
     width: 140px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: flex-end;
 }
 
 #hora {
-    margin-left: 15px;
+    margin-left: 0px;
+    width: 190px;
 }
 
 #search {
@@ -81,13 +87,13 @@ input #search {
 .buttons-ruta {
     width: 1px;
     position: relative;
-    left: 13px;
+    left: 0px;
 }
 
 .div-fecha {
     display: inline-block;
-    width: 500px;
-    margin-left: 5px;
+    width: 300px;
+    margin-left: 0px;
     padding: 0%;
     padding-bottom: 3px;
     padding-top: 3px;
@@ -427,8 +433,7 @@ input {
 
 .courses-container {
     width: 600px;
-    height: 10em;
-    margin-bottom: 150px;
+    height: 7em;
     margin-left: 25px;
 }
 
@@ -485,6 +490,7 @@ input {
 }
 
 .progress-container {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png");
     position: absolute;
     top: 30px;
     right: 30px;
@@ -493,7 +499,7 @@ input {
 }
 
 .progress {
-    background-color: #ddd;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png");
     border-radius: 3px;
     height: 5px;
     width: 100%;
@@ -501,7 +507,7 @@ input {
 
 .progress::after {
     border-radius: 3px;
-    background-color: #2A265F;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png");
     content: '';
     position: absolute;
     top: 0;
@@ -694,15 +700,15 @@ input {
 .mapouter {
     position: relative;
     text-align: right;
-    height: 664px;
+    height: 700px;
     width: 715px;
     left: 36em;
-    bottom: 70em;
+    bottom: 30em;
 }
 
 .gmap_canvas {
     overflow: hidden;
     background: none!important;
-    height: 664px;
+    height: 400px;
     width: 715px;
 }
